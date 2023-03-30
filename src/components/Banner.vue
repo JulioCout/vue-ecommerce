@@ -15,30 +15,34 @@
             </div>
 
             <div class="category-banner">
+
                 <div class="top">
 
                     <div class="img-container">
-                    <img src="@/assets/imgBanner/banner2.png" alt="">
-                    <div class="img-content">
-                        <h3>Feminino</h3>
+                        <img src="@/assets/imgBanner/banner2.png" alt="">
+                        <div class="img-content">
+                            <h3>Feminino</h3>
+                        </div>
                     </div>
 
                     <div class="img-container">
-                    <img src="@/assets/imgBanner/banner3.png" alt="">
-                    <div class="img-content">
-                        <h3>Masculino</h3>
+                        <img src="@/assets/imgBanner/banner3.png" alt="">
+                        <div class="img-content">
+                            <h3>Masculino</h3>
+                        </div>
                     </div>
+
                 </div>
+
                 <div class="bottom">
                     <div class="img-container">
-                    <img src="@/assets/imgBanner/banner4.png" alt="">
-                    <div class="img-content">
-                    <h3>Acessorios</h3>
+                        <img src="@/assets/imgBanner/banner4.png" alt="">
+                        <div class="img-content">
+                        <h3>Acessorios</h3>
+                        </div>
                     </div>
                 </div>
-                </div>
-                </div>
-                </div>
+                
             </div>
 
         </div>
