@@ -1,9 +1,12 @@
 <script>
 import Banner from '../components/Banner.vue';
+import ProductCategory from '../components/ProductCategory.vue'
+
 export default {
  name: "HomeView",
  components: {
-    Banner
+    Banner,
+    ProductCategory
  }
 }
 </script>
@@ -11,6 +14,7 @@ export default {
 <template>
     <div>
         <Banner />
+        <ProductCategory />
     </div>
 </template>
 
