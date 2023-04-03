@@ -6,15 +6,15 @@
             <h3>FEMININO</h3>
 
             <div class="tabs">
-                <button
+                <div
                     v-for="(tab, i) in tabs"
-                    class="btn"
+                    class="tab"
                     :class="{'active': activeIndex === i}"
                     :key="tab"
                     @click="activeIndex = i"
                     >
                         {{ tab }}
-                </button>
+                </div>
             </div>
 
         </div>
@@ -75,6 +75,33 @@ const activeIndex = ref(0);
             font-size: 22px;
             line-height: 25px;
         }
+
+        .tabs {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            .tab {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 13px;
+                opacity: 0.6;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            .active {
+                opacity: 1;
+            }
+            :hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        
     }
 }
 

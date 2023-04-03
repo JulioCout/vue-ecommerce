@@ -15,7 +15,7 @@ import HeaderComp from './components/HeaderComp.vue';
 <style>
 
 .container {
-  max-width: calc(144opx - 170px);
+  max-width: calc(1440px - 170px);
   width: 100%;
   margin: auto;
 }
@@ -29,6 +29,10 @@ import HeaderComp from './components/HeaderComp.vue';
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+img {
+  width: 100%;
 }
 
 </style>
