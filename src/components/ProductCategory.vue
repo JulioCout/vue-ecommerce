@@ -1,44 +1,10 @@
 <template>
     <div class="container">
 
-        <div class="category-header">
-
-            <h3>FEMININO</h3>
-
-            <div class="tabs">
-                <div
-                    v-for="(tab, i) in tabs"
-                    class="tab"
-                    :class="{'active': activeIndex === i}"
-                    :key="tab"
-                    @click="activeIndex = i"
-                    >
-                        {{ tab }}
-                </div>
-            </div>
-
-        </div>
+        <CategoryHeader :tabs="tabs" :title="title"  />
 
         <div class="products">
-            
-            <div v-for="n in 6" :key="n" class="single-product">
-
-                <div class="img-cont">
-                    <img src="@/assets/femProducts/p1.png" alt="">
-                </div>
-
-                <div class="product-content">
-                    <h6 class="name">Calça de treino feminina Q109</h6>
-                    <div class="rating">
-                        <span class="price">R$89,99</span>
-                        <span class="icon">
-                            <img src="@/assets/rating.png" alt="">
-                        </span>
-                    </div>
-                </div>
-
-            </div>
-
+            <SingleProduct v-for="(product, i) in products" :key="i" :product="products"/>
         </div>
 
         <button class="btn">Veja Todos</button>
@@ -47,64 +13,90 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
+import SingleProduct from './SingleProduct.vue'
+import CategoryHeader from './CategoryHeader.vue'
 
 
 const tabs = ref([
-    'Novidades',
-    'Especiais',
-    'Mais Vendidos',
-    'Mais Vizualizados'
-]);
+    'NOVIDADES',
+    'ESPECIAIS',
+    'MAIS VENDIDOS',
+    'MAIS VISUALIZADOS'
+])
 
-const activeIndex = ref(0);
+const title = ref('FEMININO')
+
+const products = ref([
+    {
+        img: "@/assets/femProducts/p1.png",
+        sale: false,
+        name: "Calça de treino feminina Q109",
+        price: "R$89,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p2.png",
+        sale: true,
+        name: "T-shirt básica estampada",
+        price: "R$29,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p3.png",
+        sale: false,
+        name: "Sueter Branco",
+        price: "R$69,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p4.png",
+        sale: false,
+        name: "Moletom Branco",
+        price: "R$89,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p5.png",
+        sale: false,
+        name: "Sueter Cinza",
+        price: "R$119,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p6.png",
+        sale: false,
+        name: "Calça Preta",
+        price: "R$99,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p7.png",
+        sale: false,
+        name: "Calça Curta Feminina",
+        price: "R$79,99",
+        rating: "@/assets/rating.png"
+    },
+    {
+        img: "@/assets/femProducts/p8.png",
+        sale: true,
+        name: "T-shirt Básica",
+        price: "R$29,99",
+        rating: "@/assets/rating.png"
+    }
+])
 
 </script>
 
 <style lang="scss" scoped>
 
 .container {
-    .category-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 50px;
-
-        h3 {
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 25px;
-        }
-
-        .tabs {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            .tab {
-                font-weight: 600;
-                font-size: 12px;
-                line-height: 13px;
-                opacity: 0.6;
-                transition: 0.3s;
-                cursor: pointer;
-            }
-            .active {
-                opacity: 1;
-            }
-            :hover {
-                opacity: 1;
-            }
-        }
-    }
+    
 
     .products {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 30px;
-        
     }
 }
-
-
-
 </style>
