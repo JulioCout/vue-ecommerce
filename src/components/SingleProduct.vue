@@ -1,5 +1,5 @@
 <template>
-  <div v-for="n in 6" :key="n" class="single-product">
+  <div class="single-product">
     <div class="img-container">
       <img src="@/assets/femProducts/p1.png" alt="" />
       <div v-if="product.sale" class="sale">-50%</div>
@@ -18,8 +18,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
-
   defineProps({
     product: {
       type: Object,
