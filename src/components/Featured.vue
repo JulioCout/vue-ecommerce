@@ -34,6 +34,7 @@
 
 <style lang="scss" scoped>
 .featured-products {
+    margin-bottom: 90px;
     .container {
         .products{
             display: grid;
