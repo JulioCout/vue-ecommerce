@@ -40,56 +40,56 @@ const menTitle = ref('MASCULINO')
 
 const womenProducts = ref([
     {
-        img: "../assets/femP1.png",
+        img: "https://i.imgur.com/OYQTjnB.png",
         sale: false,
         name: "Calça de treino feminina Q109",
         price: "R$89,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP2.png",
+        img: "https://i.imgur.com/gR999dy.png",
         sale: true,
         name: "T-shirt básica estampada",
         price: "R$29,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP3.png",
+        img: "https://i.imgur.com/LQXxco6.png",
         sale: false,
         name: "Sueter Branco",
         price: "R$69,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP4.png",
+        img: "https://i.imgur.com/EkjwbuD.png",
         sale: false,
         name: "Moletom Branco",
         price: "R$89,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP5.png",
+        img: "https://i.imgur.com/UL9axB3.png",
         sale: false,
         name: "Sueter Cinza",
         price: "R$119,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP6.png",
+        img: "https://i.imgur.com/SUlcDhh.png",
         sale: false,
         name: "Calça Preta",
         price: "R$99,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP7.png",
+        img: "https://i.imgur.com/5aliAOM.png",
         sale: false,
         name: "Calça Curta Feminina",
         price: "R$79,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/femP8.png",
+        img: "https://i.imgur.com/zW3WRvg.png",
         sale: true,
         name: "T-shirt Básica",
         price: "R$29,99",
@@ -99,56 +99,56 @@ const womenProducts = ref([
 
 const menProducts = ref([
     {
-        img: "../assets/menP1.png",
+        img: "https://i.imgur.com/gsmBXBg.png",
         sale: false,
         name: "Moletom Masculino",
         price: "R$89,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP2.png",
+        img: "https://i.imgur.com/9lGNWvv.png",
         sale: true,
         name: "Calça Masculina",
         price: "R$79,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP3.png",
+        img: "https://i.imgur.com/yjMqacO.png",
         sale: false,
         name: "Sueter Masculino Cinza",
         price: "R$119,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP4.png",
+        img: "https://i.imgur.com/1IqyDaD.png",
         sale: true,
         name: "Gorro Longo Cinza",
         price: "R$29,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP5.png",
+        img: "https://i.imgur.com/YbJb3ks.png",
         sale: false,
         name: "Moletom Bege",
         price: "R$119,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP6.png",
+        img: "https://i.imgur.com/IXV1UEz.png",
         sale: false,
         name: "Camisa Jeans",
         price: "R$99,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP7.png",
+        img: "https://i.imgur.com/EkvKS8v.png",
         sale: false,
         name: "Calça Fit Masculina",
         price: "R$99,99",
         rating: "../assets/rating.png"
     },
     {
-        img: "../assets/menP8.png",
+        img: "https://i.imgur.com/oufbcYK.png",
         sale: true,
         name: "Calça de Alfaiataria Cinza",
         price: "R$169,99",

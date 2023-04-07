@@ -10,7 +10,7 @@
       <div class="rating">
         <span class="price">{{ product.price }}</span>
         <span class="icon">
-          <img :src="getImage(product.rating)" alt="" />
+          <img :src="rating" alt="" />
         </span>
       </div>
     </div>
@@ -18,10 +18,17 @@
 </template>
 
 <script>
+import ratingImg from '../assets/rating.png'
+
   export default {
     name: "SingleProduct",
     props: {
       product: Object
+    },
+    data: function (){
+      return {
+        rating: ratingImg
+      }
     },
     methods: {
       getImage: function(src) {
