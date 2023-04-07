@@ -5,7 +5,7 @@
             <CategoryHeader :tabs="tabs" :title="title"  />
     
             <div class="products">
-                <SingleProduct v-for="(product, i) in products" :key="i" :product="products"/>
+                <SingleProduct v-for="(product, i) in products" :key="i" :product="product"/>
             </div>
     
             <button class="btn">Veja Todos</button>

@@ -5,14 +5,14 @@
 
                 <h6>Oferta Especial</h6>
 
-                <h3>Inscreva-se e <span>ganhe 10%</span> de desconto</h3>
+                <h3>Inscreva-se e ganhe <span>10% de desconto</span></h3>
 
                 <input type="text" placeholder="E-mail">
 
                 <button class="btn">Subscribe</button>
 
                 <div class="img-container left">
-                    <img src="../assets/subscribe-img-left" alt="">
+                    <img src="../assets/subscribe-img-left.png" alt="">
                 </div>
 
                 <div class="img-container right">
@@ -31,6 +31,9 @@
 <style lang="scss" scoped>
 .subscribe-section {
     background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+    padding: 60px 0px;
+    overflow-y: hidden;
+    margin-bottom: 50px;
     .container {
         .subscribe-wrapper {
             max-width: 532px;
@@ -38,13 +41,79 @@
             margin: auto;
             background: #ffffff;
             position: relative;
+            text-align: center;
+            padding: 80px 0px;
+            text-transform: uppercase;
+
+            h6 {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 13px;
+                opacity: 0.4;
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 36px;
+                max-width: 300px;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 32px;
+
+                span {
+                    color: #E91E63;
+                }
+            }
+
+            input {
+               height: 50px; 
+               max-width: 340px;
+               margin: auto;
+               background: #F8F8F8;
+               text-align: center;
+               border: none;
+               outline: none;
+               width: 100%;
+               margin-bottom: 20px;
+               border-radius: 5px;
+            }
+
+            .btn {
+                height: 64px; 
+                max-width: 340px;
+                background: #121212;
+                border: 2px solid #121212;
+                margin: auto;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                opacity: 0.9;
+                border-radius: 5px;
+            }
 
             .img-container {
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                left: 0;
+                left: -50%;
                 right: auto;
+            }
+
+            .right {
+                height: 100px;
+                left: auto;
+                right: -32%;
+
+                img {
+                    height: 450px;
+                }
+            }
+
+            .left {
+                height: 584px;
             }
         }
     }

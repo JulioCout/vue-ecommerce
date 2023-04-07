@@ -1,5 +1,5 @@
 <template>
-  <HeaderComp />
+  <HeaderComponent />
   <RouterView />
 </template>
 
@@ -8,7 +8,7 @@
 
 //import { RouterLink, RouterView } from 'vue-router'
 
-import HeaderComp from './components/HeaderComp.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
 
 </script>
 
@@ -33,6 +33,11 @@ import HeaderComp from './components/HeaderComp.vue';
 
 img {
   width: 100%;
+}
+
+span.icon {
+  display: flex;
+  align-items: center;
 }
 
 </style>

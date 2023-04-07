@@ -1,7 +1,7 @@
 <template>
   <div class="single-product">
     <div class="img-container">
-      <img src="@/assets/femProducts/p1.png" alt="" />
+      <img :src="getImage(product.img)" alt="" />
       <div v-if="product.sale" class="sale">-50%</div>
     </div>
 
@@ -10,19 +10,25 @@
       <div class="rating">
         <span class="price">{{ product.price }}</span>
         <span class="icon">
-          <img src="@/assets/rating.png" alt="" />
+          <img :src="getImage(product.rating)" alt="" />
         </span>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
-  defineProps({
-    product: {
-      type: Object,
+<script>
+  export default {
+    name: "SingleProduct",
+    props: {
+      product: Object
     },
-  })
+    methods: {
+      getImage: function(src) {
+        return new URL(src, import.meta.url).href
+      }
+    }
+  }
 </script>
 
 <style lang="scss" scoped>
