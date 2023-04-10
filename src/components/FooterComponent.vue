@@ -174,6 +174,7 @@
 }
 
 .footer-links {
+  background: linear-gradient(180deg, #DCDBDB 0%, #F3F2F2 100%);
     .links-wrapper {
         padding: 40px 0px;
         display: grid;
@@ -187,6 +188,9 @@
 
 
         .links {
+          @media(max-width: 969px) {
+            margin-bottom: 20px;
+          }
             h3 {
                 font-weight: 600;
                 font-size: 16px;

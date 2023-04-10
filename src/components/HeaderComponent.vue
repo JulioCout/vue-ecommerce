@@ -67,14 +67,15 @@ nav {
     max-width: calc(1440px - 170px);
     width: 100%;
     margin: auto;
+    @media(max-width: 1000px){
+      justify-content: center;
+    }
 
     .logo{
       img{
         height: 50px;
       }
-      @media(max-width: 1000px){
-          align-self: center;
-        }
+      
     }
   
     .links {
@@ -99,7 +100,7 @@ nav {
     .icons{
       display: flex;
       align-items: center;
-      @media(max-width: 1000px){
+      @media(max-width: 1045px){
           display: none;
       }
       

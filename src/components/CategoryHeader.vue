@@ -55,8 +55,8 @@ const activeIndex = ref(0)
     }
     .tab {
       font-weight: 600;
-      font-size: 12px;
-      line-height: 13px;
+      font-size: 13px;
+      line-height: 14px;
       opacity: 0.6;
       transition: 0.3s;
       cursor: pointer;
