@@ -128,6 +128,9 @@
   background-color: #121212;
   color: #ffffff;
   height: 56px;
+  @media(max-width:969px){
+    display: none;
+  }
   .container {
     .footer-wrapper {
       display: flex;
@@ -175,7 +178,12 @@
         padding: 40px 0px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-
+        @media(max-width: 969px) {
+          grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width: 600px) {
+          grid-template-columns: 1fr;
+        }
 
 
         .links {

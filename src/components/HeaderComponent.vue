@@ -72,6 +72,9 @@ nav {
       img{
         height: 50px;
       }
+      @media(max-width: 1000px){
+          align-self: center;
+        }
     }
   
     .links {
@@ -83,6 +86,9 @@ nav {
         color: #121212;
         border-bottom: 1px solid transparent;
         transition: .3s;
+        @media(max-width: 1000px){
+          display: none;
+        }
       }
   
       :hover {
@@ -93,6 +99,9 @@ nav {
     .icons{
       display: flex;
       align-items: center;
+      @media(max-width: 1000px){
+          display: none;
+      }
       
       span {
         margin: 0 13px;

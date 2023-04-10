@@ -89,6 +89,13 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
+            @media(max-width: 969px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(max-width: 600px) {
+                grid-template-columns: 1fr;
+            }
 
             .blog {
                 .blog-content {
@@ -98,6 +105,13 @@
                     transform: translateY(-100px);
                     background: #FFFFFF;
                     padding: 24px 16px;
+                    @media(max-width: 969px){
+                        max-width: 100%;
+                        transform: translateY(0px);
+                    }
+                    @media(max-width: 600px) {
+                        padding: 10px 0px;
+                    }
                 }
             }
         }

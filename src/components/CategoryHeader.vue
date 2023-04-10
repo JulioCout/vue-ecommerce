@@ -49,6 +49,10 @@ const activeIndex = ref(0)
     display: flex;
     align-items: center;
     gap: 32px;
+
+    @media(max-width: 969px){
+      display: none;
+    }
     .tab {
       font-weight: 600;
       font-size: 12px;

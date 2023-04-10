@@ -34,6 +34,9 @@
     padding: 60px 0px;
     overflow-y: hidden;
     margin-bottom: 50px;
+    @media(max-width: 600){
+                margin: 60px 20px;
+            }
     .container {
         .subscribe-wrapper {
             max-width: 532px;
@@ -44,6 +47,12 @@
             text-align: center;
             padding: 80px 0px;
             text-transform: uppercase;
+            @media(max-width: 969px){
+                padding: 80px 20px;
+            }
+            @media(max-width: 600px){
+                padding: 80px 20px;
+            }
 
             h6 {
                 font-weight: 600;
@@ -64,6 +73,10 @@
                 span {
                     color: #E91E63;
                 }
+                @media(max-width: 400px){
+                    font-size: 16px;
+                    line-height: 20px;
+                }
             }
 
             input {
@@ -77,6 +90,9 @@
                width: 100%;
                margin-bottom: 20px;
                border-radius: 5px;
+               @media(max-width: 400px){
+                    height: 40px;
+                }
             }
 
             .btn {
@@ -92,6 +108,9 @@
                 text-transform: uppercase;
                 opacity: 0.9;
                 border-radius: 5px;
+                @media(max-width: 400px){
+                    height: 40px;
+                }
             }
 
             .img-container {
@@ -100,6 +119,9 @@
                 bottom: 0;
                 left: -50%;
                 right: auto;
+                @media(max-width: 969px){
+                    display: none;
+                }
             }
 
             .right {

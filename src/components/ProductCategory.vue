@@ -33,6 +33,12 @@ defineProps(['title', 'products', 'tabs'])
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 30px;
+            @media (max-width: 969px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            @media (max-width: 400px) {
+                grid-template-columns: 1fr;
+            }
         }
         .btn {
             height: 48px;
@@ -43,5 +49,9 @@ defineProps(['title', 'products', 'tabs'])
         }
     }
 }
+
+
+
+
 
 </style>
