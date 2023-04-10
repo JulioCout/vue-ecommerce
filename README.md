@@ -1,29 +1,45 @@
-# julio-ecommerce
 
-This template should help get you started developing with Vue 3 in Vite.
+# Ecommerce com Vue
 
-## Recommended IDE Setup
+Front End responsivo feito com Vue.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Acesse em: https://julios-vue-ecommerce.netlify.app
+## Stack utilizada
 
-## Customize configuration
++ HTML
++ CSS
++ JavaScript
++ Vue
++ Sass
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+
+## Screenshot
+
+![App Screenshot](https://i.imgur.com/z4vJpyR.png)
+
+## Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Produção
 
 ```sh
 npm run build
 ```
+## Feedback
+
+Se você tiver algum feedback, por favor me deixe saber pelo e-mail: juliocscoutinho@outlook.com
+
+
+## Autores
+
+- [@JulioCout](https://www.github.com/juliocout)
